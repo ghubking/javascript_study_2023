@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트2.변수</title>
+</head>
+<body>
+    <script>
+
+        //변수명 중복 불가(생성 시)
+        //변수는 한번에 한가지 값만 담기 가능.
+        //변수 선언 키워드: var, let, const
+        //var == vanilaJS 버젼의 오래된 변수 선언 키워드  -->변수명 중복 오류 체크 불가
+        //let, const == ES5 2015년 이후 변수키워드
+        let a = 1;
+        console.log(a); //1
+        let b = 2;
+        console.log(b); //2
+
+        let c = 10;  // let은 처음 생성 시에만 씀.
+        console.log(c);  //10
+        c = 11;
+        console.log(c); //11
+    </script>
+</body>
+</html>

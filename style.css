@@ -1,0 +1,114 @@
+main {
+    width:1200px;
+    margin:0 auto;
+    }
+/* 공통 제목 CSS */
+main section {text-align: center;}
+main section .category {}
+main section .category::after {   /* 밑줄 만드는 태그 */
+    display: block; 
+    content:'';
+    background: #aaa;
+    height:2px; width:20px;
+    margin: 20px auto 0;
+}
+main section h1 {
+    font-size: 2.0rem;
+    letter-spacing: -0.02rem;
+    padding: 25px 0;
+}
+main section .contents {
+    color: #888;
+    margin-bottom: 30px;
+}
+/* 카히스토리 영상 */
+/* 카히스토리 영상 - 탭 제목, 내용 */
+main #video .tab_title {
+    
+    }
+main #video .tab_title a {
+    padding:20px 30px;
+    display: inline-block;
+}
+main #video .tab_title a.active {
+    border-bottom: 5px solid #2439f0;
+}
+main #video .tab_contents {}
+main #video .tab_contents .tab_c1 {
+    position: relative;    /* 부모 고정을 시켜놔야 화면을줄였을때, 대상 이미지가 움직이지 않음 */
+}
+main #video .tab_contents .tab_c1 img {
+    width:200px; 
+    position: absolute; 
+    right:50px; top:230px;
+}
+main #video .tab_contents .tab_c1 video {
+    width: 80%; margin: 0 auto;
+    
+}
+main #video .tab_contents .tab_c2 {}
+main #video .tab_contents .tab_c2 img {
+    width: 80%; margin: 0 auto;
+}
+main #video .tab_contents .active {}
+/* 자주사용하는 메뉴 - 탭 제목 */
+main #menu {}
+main #menu .category {}
+main #menu h1 {}
+main #menu p {}
+main #menu .tab_title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #888;
+}
+main #menu .tab_title a {
+    width: 150px;
+    padding:20px 0;
+    margin-right: 10px; background: lime;
+    position:relative; bottom:-1px;
+    border:1px solid #ccc; background: #fff;
+    border-bottom: 1px solid #888;
+}
+main #menu .tab_title a:last-child {margin-right: 0;}
+main #menu .tab_title a.active {
+    border:1px solid#888;
+    border-bottom: 1px #fff;
+    border-top:3px solid#2439f0;
+}
+main #menu .tab_contents {}
+main #menu .tab_contents .tab_c1 {
+    padding-top: 50px;
+    display: flex;
+    text-align: left;
+}
+main #menu .tab_contents .tab_c1 .left {
+    width:45%;
+}
+main #menu .tab_contents .tab_c1 .left h2 {
+    font-size: 1.4rem;
+}
+main #menu .tab_contents .tab_c1 .left p {padding-top: 10px;}
+main #menu .tab_contents .tab_c1 .left p img {width:90%;}
+main #menu .tab_contents .tab_c1 .left p a {color:#2439f0;}
+main #menu .tab_contents .tab_c1 .right {
+    width:55%;
+}
+main #menu .tab_contents .tab_c1 .right h3 {
+    font-size: 1.3rem;
+}
+main #menu .tab_contents .tab_c1 .right ul {}
+main #menu .tab_contents .tab_c1 .right ul li {
+    display: flex; border-bottom: 1px dashed #aaa;
+    padding: 20px 0px 10px;
+}
+main #menu .tab_contents .tab_c1 .right ul li:last-child  {border:0;}
+main #menu .tab_contents .tab_c1 .right ul li > p {}
+main #menu .tab_contents .tab_c1 .right ul li > p img {}
+main #menu .tab_contents .tab_c1 .right ul li > .contents {padding-left: 20px;}
+main #menu .tab_contents .tab_c1 .right ul li > .contents .num {font-weight: 700; color:#2439f0}
+main #menu .tab_contents .tab_c1 .right ul li > .contents .con {padding-top: 10px;}
+main #menu .tab_contents .tab_c1 .right ul li > .contents .con em {font-size: 1.3rem; color:#222;}
+main #menu .tab_contents .tab_c1 .right ul li > .contents .con span {}
+main #menu .tab_contents .tab_c2 {height:400px;}
+main #menu .tab_contents .tab_c3 {height:400px;}
+main #menu .tab_contents .tab_c4 {height:400px;}
